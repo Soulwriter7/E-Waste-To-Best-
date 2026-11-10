@@ -1,5 +1,5 @@
 # E-Waste to Best: Smart E-Waste Recycling & Metal Recovery System
-> **Academic Final Year / Capstone College Project**  
+
 > Built with: **PHP 8.x, MySQL, HTML5, CSS3, JavaScript (ES6+), Bootstrap 5.3 & Chart.js**
 
 ---
