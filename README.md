@@ -152,3 +152,5 @@ For seamless college viva evaluation, you can use the **Quick Demo Login buttons
 - **Theoretical vs. Verified:** The application explicitly labels mathematical estimates prior to physical intake as **"Theoretical Projections"**.
 - **No False Booking Claims:** Pickups are assigned a confirmation reference code only when verified and booked into the MySQL database.
 - **Authorized Facilities:** Collection center directory contains structured address, phone, email, operating hours, and accepted materials.
+
+- Created and maintained by Akash Shukla. 
