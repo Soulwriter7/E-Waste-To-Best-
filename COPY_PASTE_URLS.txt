@@ -1,0 +1,97 @@
+================================================================================
+  E-WASTE TO BEST: SMART E-WASTE RECYCLING & METAL RECOVERY SYSTEM
+  BROWSER ACCESS URLS & IP ADDRESS REFERENCE GUIDE
+================================================================================
+
+[+] MAIN WEBSITE (COPY & PASTE IN BROWSER)
+--------------------------------------------------------------------------------
+Option 1 (Recommended on this PC):
+http://localhost/Waste%20to%20best/
+
+Option 2 (Standard Localhost):
+http://localhost/Waste to best/
+
+Option 3 (Loopback IP Address):
+http://127.0.0.1/Waste%20to%20best/
+
+Option 4 (Your Local Wi-Fi Network IP Address):
+http://192.168.0.103/Waste%20to%20best/
+(Use this URL to open the website on your Mobile Phone or another Laptop connected to the same Wi-Fi!)
+
+
+[+] DIRECT PAGE LINKS (COPY & PASTE)
+--------------------------------------------------------------------------------
+* Homepage:
+  http://localhost/Waste%20to%20best/index.php
+
+* Metal Recovery & Value Estimator:
+  http://localhost/Waste%20to%20best/estimator.php
+
+* Authorized Collection Centers Directory:
+  http://localhost/Waste%20to%20best/centers.php
+
+* E-Waste Hazards & Public Awareness:
+  http://localhost/Waste%20to%20best/awareness.php
+
+* Circular Economy & Reuse Suggestions:
+  http://localhost/Waste%20to%20best/reuse-tips.php
+
+* User Login Page:
+  http://localhost/Waste%20to%20best/login.php
+
+* User Registration Page:
+  http://localhost/Waste%20to%20best/register.php
+
+* User Dashboard (After Login):
+  http://localhost/Waste%20to%20best/user/dashboard.php
+
+* Schedule Doorstep Pickup:
+  http://localhost/Waste%20to%20best/user/pickup-request.php
+
+* Environmental Impact & Green Certificate:
+  http://localhost/Waste%20to%20best/user/impact.php
+
+* Admin Dashboard (After Admin Login):
+  http://localhost/Waste%20to%20best/admin/dashboard.php
+
+* Admin Pickup Requests Queue:
+  http://localhost/Waste%20to%20best/admin/pickups.php
+
+* Admin Collection Centers Manager:
+  http://localhost/Waste%20to%20best/admin/centers.php
+
+* Admin Metal Rates Manager:
+  http://localhost/Waste%20to%20best/admin/metal-rates.php
+
+
+[+] DATABASE MANAGEMENT (phpMyAdmin)
+--------------------------------------------------------------------------------
+URL:
+http://localhost/phpmyadmin/
+
+Database Name:
+ewaste_db
+
+
+[+] DEMO LOGIN CREDENTIALS (FOR COLLEGE VIVA PRESENTATION)
+--------------------------------------------------------------------------------
+1. ADMINISTRATOR ACCOUNT (Full Admin Control):
+   Email    : admin@ewaste.org
+   Password : admin123
+
+2. CITIZEN DEMO ACCOUNT 1:
+   Email    : rahul@gmail.com
+   Password : user123
+
+3. CITIZEN DEMO ACCOUNT 2:
+   Email    : priya@gmail.com
+   Password : user123
+
+(Tip: On the login page, you can also click the "Admin Demo" or "Citizen Demo" buttons to automatically fill credentials!)
+
+
+[+] REQUIREMENTS TO RUN
+--------------------------------------------------------------------------------
+Make sure Apache and MySQL are running in the XAMPP Control Panel.
+Or simply double-click "run_website.bat" to start everything automatically!
+================================================================================

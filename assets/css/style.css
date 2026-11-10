@@ -1,0 +1,336 @@
+/* ==============================================================
+   E-Waste to Best - Modern Environmental Technology Theme
+   Color Palette: Deep Emerald, Teal, Cyan Accent & Slate Dark
+   ============================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-emerald: #10b981;
+  --primary-dark: #064e3b;
+  --primary-light: #d1fae5;
+  --secondary-teal: #0d9488;
+  --accent-cyan: #06b6d4;
+  --dark-slate: #0f172a;
+  --surface-card: #ffffff;
+  --bg-soft: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
+
+  /* Precious Metal Colors */
+  --metal-gold: #f59e0b;
+  --metal-gold-bg: #fef3c7;
+  --metal-silver: #64748b;
+  --metal-silver-bg: #f1f5f9;
+  --metal-copper: #c2410c;
+  --metal-copper-bg: #ffedd5;
+  --metal-aluminium: #475569;
+  --metal-aluminium-bg: #e2e8f0;
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background-color: var(--bg-soft);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-font {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* -------------------------------------------------------------
+   Navigation Bar
+   ------------------------------------------------------------- */
+.navbar-custom {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.85rem 1rem;
+}
+
+.navbar-custom .navbar-brand {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-custom .navbar-brand span.eco-highlight {
+  background: linear-gradient(135deg, #34d399 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-custom .nav-link {
+  color: #cbd5e1;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.85rem !important;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.1);
+}
+
+/* -------------------------------------------------------------
+   Hero Sections & Banners
+   ------------------------------------------------------------- */
+.hero-gradient {
+  background: radial-gradient(circle at 10% 20%, rgb(6, 78, 59) 0%, rgb(15, 23, 42) 90%);
+  color: #ffffff;
+  padding: 4.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-gradient::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(rgba(52, 211, 153, 0.15) 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  color: #94a3b8;
+  max-width: 650px;
+}
+
+/* -------------------------------------------------------------
+   Cards & Modern Glassmorphism
+   ------------------------------------------------------------- */
+.card-modern {
+  background: var(--surface-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-modern:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.08);
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.stat-card {
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card .stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/* -------------------------------------------------------------
+   Buttons & Micro-interactions
+   ------------------------------------------------------------- */
+.btn-emerald {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 0.65rem 1.4rem;
+  box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.35);
+  transition: all 0.2s ease;
+}
+
+.btn-emerald:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px 0 rgba(16, 185, 129, 0.45);
+}
+
+.btn-outline-emerald {
+  color: #10b981;
+  border: 2px solid #10b981;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 0.6rem 1.3rem;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-emerald:hover {
+  background: #10b981;
+  color: #ffffff;
+}
+
+/* -------------------------------------------------------------
+   Metal Yield Indicators & Badges
+   ------------------------------------------------------------- */
+.metal-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.metal-pill-gold {
+  background: var(--metal-gold-bg);
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.metal-pill-silver {
+  background: var(--metal-silver-bg);
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.metal-pill-copper {
+  background: var(--metal-copper-bg);
+  color: #9a3412;
+  border: 1px solid #ffedd5;
+}
+
+.metal-pill-aluminium {
+  background: var(--metal-aluminium-bg);
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+/* Scientific Disclaimer Box */
+.disclaimer-badge {
+  background: #f8fafc;
+  border-left: 4px solid #3b82f6;
+  padding: 0.85rem 1.15rem;
+  border-radius: 0 10px 10px 0;
+  font-size: 0.88rem;
+  color: #475569;
+}
+
+.disclaimer-badge.warning {
+  border-left-color: #f59e0b;
+  background: #fffbeb;
+  color: #92400e;
+}
+
+/* -------------------------------------------------------------
+   Pickup Status Tracker Badges
+   ------------------------------------------------------------- */
+.badge-status {
+  padding: 0.4rem 0.85rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.badge-status-pending { background: #fef3c7; color: #92400e; }
+.badge-status-assigned { background: #e0f2fe; color: #0369a1; }
+.badge-status-out-for-pickup { background: #f3e8ff; color: #7e22ce; }
+.badge-status-collected { background: #ccfbf1; color: #0f766e; }
+.badge-status-completed { background: #dcfce7; color: #15803d; }
+.badge-status-cancelled { background: #fee2e2; color: #b91c1c; }
+
+/* -------------------------------------------------------------
+   Interactive Step Progress UI
+   ------------------------------------------------------------- */
+.step-item {
+  position: relative;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+.step-item:last-child {
+  padding-bottom: 0;
+}
+
+.step-item::before {
+  content: '';
+  position: absolute;
+  left: 17px;
+  top: 36px;
+  bottom: 0;
+  width: 2px;
+  background: #e2e8f0;
+}
+
+.step-item:last-child::before {
+  display: none;
+}
+
+.step-circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #10b981;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+/* -------------------------------------------------------------
+   Footer
+   ------------------------------------------------------------- */
+.footer-custom {
+  background: #090d16;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 4rem 0 2rem;
+  font-size: 0.92rem;
+}
+
+.footer-custom a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-custom a:hover {
+  color: #34d399;
+}
